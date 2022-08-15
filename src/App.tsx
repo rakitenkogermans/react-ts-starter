@@ -1,6 +1,6 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import './styles/main.css';
-import {NAME} from "./constants/environment";
+import {NAME} from './constants/environment';
 
 type AppProps = {};
 
