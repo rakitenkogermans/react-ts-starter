@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
     env: {
@@ -10,9 +10,9 @@ module.exports = {
         project: path.resolve(__dirname, './tsconfig.json'),
         tsconfigRootDir: __dirname,
         ecmaFeatures: {
-            jsx: true
+            jsx: true,
         },
-        ecmaVersion: "latest",
+        ecmaVersion: 'latest',
         sourceType: 'module',
     },
     extends: [
@@ -36,15 +36,16 @@ module.exports = {
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': ['error'],
         '@typescript-eslint/no-var-requires': 'off',
-        "@typescript-eslint/ban-types": [
-            "error",
+        '@typescript-eslint/ban-types': [
+            'error',
             {
-                "extendDefaults": true,
-                "types": {
-                    "{}": false
-                }
-            }
+                extendDefaults: true,
+                types: {
+                    '{}': false,
+                },
+            },
         ],
+        '@typescript-eslint/bracketSpacing': false,
         'react/prop-types': 'off',
         'react/jsx-uses-react': 'off',
         'react/react-in-jsx-scope': 'off',
@@ -55,4 +56,4 @@ module.exports = {
             version: 'detect',
         },
     },
-}
+};

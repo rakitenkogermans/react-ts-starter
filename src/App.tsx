@@ -1,10 +1,10 @@
 import {FC} from 'react';
-import './styles/main.css';
-import {NAME} from './constants/environment';
+import './assets/styles/main.css';
+import {NAME} from './data/environment';
 
 type AppProps = {};
 
-const App: FC<AppProps> = ({}) => {
+const App: FC<AppProps> = () => {
     return <div>App, {NAME}</div>;
 };
 
